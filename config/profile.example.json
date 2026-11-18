@@ -1,0 +1,157 @@
+{
+  "owner": "Your Name",
+  "home": {
+    "zip": "00000",
+    "city": "Your city",
+    "region": "Your metro"
+  },
+  "maxAgeHours": 24,
+  "maxApplicants": 25,
+  "titles": {
+    "include": [
+      "(senior|sr\\.?|staff|principal|lead|group|director( of)?|head of)\\s+(technical\\s+|ai\\s+|platform\\s+|growth\\s+)?product(\\s+manag\\w*|\\s+lead\\w*|\\b)",
+      "\\bproduct lead\\b",
+      "\\b(founding|first)\\s+(product|pm)\\b",
+      "\\bhead of product\\b",
+      "\\bgroup product manager\\b|\\bgpm\\b",
+      "\\b(senior|sr\\.?|staff|principal|lead|director( of)?|head of)\\s+(technical\\s+)?program manag\\w*",
+      "\\btechnical program manager\\b|\\btpm\\b",
+      "\\bproduct operations\\b|\\bproduct ops\\b",
+      "\\bforward[- ]deployed\\b",
+      "\\b(ai|applied ai)\\s+solutions?\\s+(lead|manager|architect|engineer)\\b",
+      "\\b(senior|sr\\.?|staff|principal|lead)\\s+(ai|technical)\\s+product manag\\w*"
+    ],
+    "exclude": [
+      "\\b(associate|junior|jr\\.?|intern(ship)?|apprentice|apm|rotational|new grad|entry)\\b",
+      "\\b(vp|vice president|svp|evp|chief|cpo|cto|ceo|coo)\\b",
+      "\\bproduct (marketing|design\\w*|analyst|support|specialist|owner|counsel|security)\\b",
+      "\\b(designer|ux|researcher|copywriter|recruit\\w*|account executive|sales|marketing manager|customer success|finance|accountant|legal|counsel|hr\\b|people ops)\\b",
+      "\\b(software|backend|frontend|front-end|back-end|full[- ]?stack|ml|machine learning|data|devops|security|qa|ios|android|platform|infrastructure|systems|hardware|mechanical|electrical|firmware|embedded|solutions?)\\s+engineer\\b",
+      "\\bengineering manager\\b|\\bdirector( of)? engineering\\b|\\bhead of engineering\\b"
+    ],
+    "excludeOverrides": [
+      "\\bforward[- ]deployed\\b"
+    ]
+  },
+  "domainKeywords": {
+    "strong": [
+      "ai-native",
+      "agentic",
+      "agents",
+      "llm",
+      "generative",
+      "personalization",
+      "knowledge graph",
+      "content platform",
+      "cms",
+      "digital asset",
+      "dam\\b",
+      "commerce",
+      "ecommerce",
+      "e-commerce",
+      "marketplace platform",
+      "0-to-1",
+      "0 to 1",
+      "zero to one",
+      "founding",
+      "developer platform",
+      "api platform",
+      "martech",
+      "marketing technology",
+      "b2b saas",
+      "multi-tenant",
+      "platform"
+    ],
+    "medium": [
+      "workflow",
+      "automation",
+      "search",
+      "data platform",
+      "analytics",
+      "attribution",
+      "experimentation",
+      "a/b",
+      "growth",
+      "enterprise",
+      "saas",
+      "roadmap",
+      "strategy",
+      "ambiguity",
+      "cross-functional",
+      "stakeholder"
+    ]
+  },
+  "location": {
+    "remoteOk": true,
+    "hybridCities": [
+      "your city",
+      "nearby city"
+    ],
+    "hybridRegions": [
+      "your metro"
+    ],
+    "remoteCountries": [
+      "united states",
+      "usa",
+      "us\\b",
+      "u\\.s\\.",
+      "north america",
+      "americas",
+      "anywhere",
+      "global",
+      "worldwide",
+      "us/canada",
+      "united states/canada"
+    ],
+    "excludeRemoteOutside": [
+      "europe",
+      "emea",
+      "uk\\b",
+      "united kingdom",
+      "london",
+      "india",
+      "apac",
+      "latam",
+      "canada only",
+      "germany",
+      "berlin",
+      "paris",
+      "israel",
+      "tel aviv",
+      "singapore",
+      "australia"
+    ],
+    "searchArea": {
+      "linkedinGeoId": "103644278",
+      "linkedinLocation": "United States",
+      "indeedLocation": "Your city, ST",
+      "glassdoorLocId": "",
+      "glassdoorLocation": "Your city, ST",
+      "radiusMiles": 50
+    }
+  },
+  "topstartups": {
+    "startupsQuery": "hq_location=Usa&funding_round=Seed&funding_round=Series+A&funding_round=Series+B&funding_round=Series+C&funding_round=Series+D&funding_round=Series+E&funding_round=Series+F&funding_round=Series+G&funding_round=Series+H&funding_round=Series+I",
+    "jobRoles": [
+      "Product",
+      "Program",
+      "Forward Deployed",
+      "Chief of Staff"
+    ]
+  },
+  "searchQueries": [
+    "senior product manager",
+    "staff product manager",
+    "principal product manager",
+    "group product manager",
+    "director of product",
+    "head of product",
+    "product lead",
+    "founding product manager",
+    "technical program manager",
+    "senior program manager",
+    "product operations",
+    "forward deployed"
+  ],
+  "tailorModel": "sonnet"
+}

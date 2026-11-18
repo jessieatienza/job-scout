@@ -1,0 +1,7 @@
+node_modules/
+.chrome-profile/
+data/
+out/
+logs/
+config/profile.json
+*.log

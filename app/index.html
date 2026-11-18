@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Scout</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="app">
+  <aside class="rail">
+    <div class="brand"><span>Scout</span><span class="runline" id="runline"></span></div>
+    <nav class="stages" id="stages" aria-label="Stages"></nav>
+    <div class="railtools">
+      <input id="q" type="search" placeholder="Filter" aria-label="Filter jobs">
+    </div>
+    <div class="list" id="list"></div>
+    <div class="railfoot">
+      <button class="ghost" id="pasteBtn">Paste a posting</button>
+      <button class="ghost" id="runBtn" title="Run the scout now">Run now</button>
+    </div>
+  </aside>
+  <main class="work" id="work"></main>
+</div>
+<dialog id="pasteDlg">
+  <form method="dialog" id="pasteForm">
+    <h2>Paste a posting</h2>
+    <div class="grid2"><label>Title<input name="title" type="text"></label><label>Company<input name="company" type="text"></label></div>
+    <label>Link<input name="url" type="url" placeholder="https://"></label>
+    <label>Posting<textarea name="text" rows="10" required placeholder="The whole job description."></textarea></label>
+    <div class="row end"><button type="button" class="ghost" id="pasteCancel">Cancel</button><button class="pri" value="ok">Add to shortlist</button></div>
+  </form>
+</dialog>
+<script src="app.js"></script>
+</body>
+</html>

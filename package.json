@@ -1,0 +1,25 @@
+{
+  "name": "job-scout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "node src/run.mjs",
+    "fast": "node src/run.mjs --no-browser",
+    "login": "node bin/login.mjs",
+    "open": "open http://127.0.0.1:4747",
+    "schedule": "zsh bin/install-schedule.sh",
+    "unschedule": "launchctl bootout gui/$(id -u)/io.jobscout.scout; launchctl bootout gui/$(id -u)/io.jobscout.server",
+    "serve": "node src/server.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "private": "true",
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "playwright-core": "^1.65.0"
+  }
+}

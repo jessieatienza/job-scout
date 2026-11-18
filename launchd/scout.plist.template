@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+  <key>Label</key><string>io.jobscout.scout</string>
+  <key>ProgramArguments</key><array><string>__NODE__</string><string>__ROOT__/src/run.mjs</string></array>
+  <key>WorkingDirectory</key><string>__ROOT__</string>
+  <key>StartCalendarInterval</key><array>
+    <dict><key>Hour</key><integer>8</integer><key>Minute</key><integer>0</integer></dict>
+    <dict><key>Hour</key><integer>13</integer><key>Minute</key><integer>0</integer></dict>
+    <dict><key>Hour</key><integer>18</integer><key>Minute</key><integer>0</integer></dict>
+  </array>
+  <key>StandardOutPath</key><string>__ROOT__/logs/scout.out.log</string>
+  <key>StandardErrorPath</key><string>__ROOT__/logs/scout.err.log</string>
+  <key>EnvironmentVariables</key><dict><key>PATH</key><string>/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin</string><key>HOME</key><string>__HOME__</string></dict>
+</dict></plist>
